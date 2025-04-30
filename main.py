@@ -42,3 +42,7 @@ def generate_payment():
 @app.route("/", methods=["GET"])
 def index():
     return "Tap Payment API is running", 200
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
+
